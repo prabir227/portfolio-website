@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+    background-color: transparent;
+    color: white;
+}
+body{
+    background-color: #031419;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #072027;
+}
+.leftheader a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.navitem a{
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    font-size: 25px;
+}
+.navitem a:hover{
+    color: #0ef;
+    text-shadow: 0 0 10px #0ef, 0 0 20px #0ef;
+}
+.home{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.home div{
+    color: white;
+}
+.lefthome{
+    width:45%;
+    font-size: 3rem;
+    justify-content: left;
+    padding: 80px;
+}
+.righthome{
+    width: 55%;
+    text-align: center;
+}
+#homeimg{
+    margin: -15% 0 0 0;
+    
+}
+.colorblue{
+    color: #0ef;
+    
+}
+
+.social a{
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 50px;
+    width: 50px;
+    border: 2px solid #0ef;
+    color: #0ef;
+    border-radius: 50%;
+    font-size: 30px;
+    margin: 30px 15px 10px 0;
+  
+}
+.social a:hover{
+    background-color: #0ef;
+    color:#031419;
+    box-shadow: 0 0 20px #0ef;
+}
+.resumebtn a{
+    display: inline-block;
+    text-decoration: none;
+    color:#031419;
+    background-color: #0ef;
+    border-radius: 40px;
+    padding: 10px 15px;
+    font-size: 25px;
+    font-weight: 600;
+    align-self:center;
+    margin-top: 30px;
+
+    box-shadow: 0 0 20px #0ef;
+}
+.resumebtn a:hover{
+    box-shadow: 0 0 30px 10px #0ef;
+    
+    
+}
+.about{
+    display:flex;
+
+}
+.leftabout{
+    width: 45%;
+    
+}
+.rightabout{
+    width: 55%;
+    font-size: 3rem;
+    color: white;
+}
+.rightabout div h1{
+    display: inline-block;
+}
+.spacediv{
+    height: 30px;
+}
+#aboutimg{
+    margin: -15% 0 0 0;
+}
+#aboutdesig{
+    font-size: 2.5rem;
+    font-weight: 600;
+
+}
+#abouttext{
+    font-size: 1.5rem;
+    padding: 0 10% 0 0;
+
+}
+#servicehead{
+    font-size: 4rem;
+    color: white;
+    margin: 0 0 0 -2%;
+    text-align: center;
+}
+section{
+    margin: 10% 0 10% 0;
+}
+header{
+    margin: 0 0 10% 0;
+}
+.servicescontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 7%;
+    gap: 2vw;
+}
+.servicecard{
+    border: 2px solid #0ef;
+    padding: 5%;
+    border-radius: 3%;
+    box-shadow: 5px #012290f7;
+}
+.cardspace{
+    height: 7%;
+}
