@@ -160,7 +160,6 @@ body {
 
 #servicehead {
     font-size: 4rem;
-    color: white;
     margin: 0 0 0 -2%;
     text-align: center;
 }
@@ -280,4 +279,120 @@ header {
     background: #0ef;
     color: white;
     
+}
+.contacts{
+    display: flex;
+    margin: 5%;
+}
+.leftcontact{
+    width: 50%;
+    margin: 1%;
+}
+.leftcontact h2{
+    text-align: center;
+}
+.leftcontact p{
+    color: rgba(177,177,177);
+    font-size: 1rem;
+}
+.leftcontact h3{
+    margin: 5% 0 1% 0;
+}
+.rightcontact{
+    width: 50%;
+    margin: 1%;
+}
+.rightcontact form{
+    display: flex;
+    flex-direction: column;
+}
+.rightcontact form input{
+    background-color: rgba(177,177,177);
+    border: none;
+    margin: 5px;
+    height: 3rem;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #000;
+
+}
+.rightcontact form input::placeholder{
+    font-weight: 600;
+    padding-left: 10px;
+}
+.rightcontact form textarea::placeholder{
+    font-weight: 600;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.rightcontact form button{
+    background-color: #0ef;
+    color: #000;
+    height: 3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    border: none;
+    margin: 25px 5px;
+    box-shadow: 0 0 20px 5px #0ef;
+}
+.rightcontact form button:hover{
+    box-shadow: 0 0 30px 10px #0ef;
+}
+#messagebox{
+    background-color: rgba(177,177,177);
+    border-radius: 5px;
+    margin: 10px 5px;
+    color: #000;
+
+}
+.contacticons{
+    display: flex;
+}
+.contacticons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 40px;
+    width: 40px;
+    border: 2px solid #0ef;
+    color: #0ef;
+    border-radius: 50%;
+    font-size: 23px;
+    margin: 45px 15px 10px 0;
+}
+.contacticons a:hover{
+    background-color: #0ef;
+    color: #031419;
+    box-shadow: 0 0 20px #0ef;
+}
+.contacticons a i:hover{
+    color: #031419;
+}
+#communications{
+    margin: 5% 0 5% 0;
+    font-size: 1.1rem;
+}
+.contact{
+    margin: 10% 0 5% 0;
+}
+#floatingbutton{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #0ef;
+    border-radius: 10%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#floatingbutton:hover{
+    box-shadow: 0 0 20px 5px #0ef;
+}
+#floatingbutton button{
+    border: none;
+    font-size: 35px;
 }
