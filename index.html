@@ -17,11 +17,11 @@
         <div class="rightheader">
             <nav class="navbar">
                 <ul>
-                    <li class="navitem"><a href="#">Home</a></li>
-                    <li class="navitem"><a href="#">About</a></li>
-                    <li class="navitem"><a href="#">Projects</a></li>
+                    <li class="navitem"><a href="#home">Home</a></li>
+                    <li class="navitem"><a href="#about">About</a></li>
+                    <li class="navitem"><a href="#projects">Projects</a></li>
                     <li class="navitem"><a href="#">Skills</a></li>
-                    <li class="navitem"><a href="#">Contact</a></li>
+                    <li class="navitem"><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -29,7 +29,7 @@
     <div id="floatingbutton">
         <button onclick="screenTop()"><i class='bx bx-up-arrow-alt' style="color: #031419;"></i></button>
     </div>
-    <section class="home">
+    <section class="home" id="home">
         <div class="lefthome">
             <div>Hello, Its me</div>
             <h1>Prabir Ghosh</h1>
@@ -38,21 +38,19 @@
                 <div class="social">
                     <a href="https://www.linkedin.com/in/prabirghosh227/" class="socialicon" target="_blank"><i class='bx bxl-linkedin'></i></a>
                     <a href="https://github.com/prabir227" class="socialicon" target="_blank"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.instagram.com/prabirghosh227/" class="socialicon"><i class='bx bxl-instagram'></i></a>
-                    <a href="#" class="socialicon"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="https://www.instagram.com/prabirghosh227/" class="socialicon" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://wa.me/919852574126" class="socialicon" target="_blank"><i class='bx bxl-whatsapp'></i></a>
                 </div>
                 <div class="resumebtn">
                     <a href="#">Resume</a>
                 </div>
             </div>
-
-
         </div>
         <div class="righthome">
             <img src="/images/Image.png" alt="profile picture" id="homeimg">
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="leftabout">
             <img src="/images/Image2.png" alt="profile picture" id="aboutimg">
         </div>
@@ -74,7 +72,7 @@
             </div>
 
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <h1 id="servicehead">My <span class="colorblue">Services</span></h1>
         <div class="servicescontainer">
             <div class="servicecardborder">
@@ -116,7 +114,7 @@
             </div>
         </div>
     </section>
-    <section class="projects">
+    <section class="projects" id="projects">
         <div class="projectshead">
             <h1 id="projecthead">Latest <span class="colorblue">Projects</span></h1>
         </div>
@@ -151,7 +149,7 @@
         </div>
 
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contacts">
             <div class="leftcontact">
                 <h2>Contact <span class="colorblue">Me</span></h2>
@@ -186,7 +184,10 @@
         </div>
         
     </section>
-    
+    <footer class="footer">
+        <p>Developed by Prabir Ghosh &copy; in 2025.</p>
+
+    </footer>    
 
     <script src="main.js"></script>
 </body>

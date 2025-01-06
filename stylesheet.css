@@ -15,8 +15,11 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 10%;
+    padding: 10px 10%;
     background-color: #072027;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .leftheader a {
@@ -36,13 +39,30 @@ body {
 .navitem a {
     text-decoration: none;
     color: #0ef;
-    margin: 0 20px;
+    margin: 0 40px;
     font-size: 25px;
+    position: relative;
+    top: 15px;
 }
 
-.navitem a:hover {
-    color: #0ef;
-    text-shadow: 0 0 10px #0ef, 0 0 20px #0ef;
+.navbar ul li a::after {
+    content: "";
+    width: 0%;
+    height: 3px;
+    display: block;
+    background-color: #0ef;
+    position: relative;
+    top: 7px;
+    left: 30px;
+    border-radius: 50px;
+    transition: 0.7s ease-in-out;
+}
+
+.navbar ul li a:hover::after {
+    width: 80%;
+    height: 3px;
+    display: block;
+    background-color: #0ef;
 }
 
 .home {
@@ -114,8 +134,6 @@ body {
 
 .resumebtn a:hover {
     box-shadow: 0 0 30px 10px #0ef;
-
-
 }
 
 .about {
@@ -202,9 +220,11 @@ header {
     font-weight: 600;
     box-shadow: 0 0 20px #0ef;
 }
+
 .cardbutton a:hover {
     box-shadow: 0 0 30px 10px #0ef;
 }
+
 .servicecardborder {
     box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
     margin: 5%;
@@ -212,102 +232,120 @@ header {
     height: 23rem;
     display: flex;
     align-items: stretch;
+    position: relative;
+    transition: 1s ease;
 }
+.servicecardborder:hover{
+    transform: translateY(-20px);
+}
+
 #projecthead {
     font-size: 4rem;
     color: white;
     margin: 0 0 0 -2%;
     text-align: center;
 }
+
 .projectscontainer {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     margin: 7%;
     gap: 5%;
-    
-    
+
+
 }
+
 .projectcard img {
     width: 100%;
     height: 100%;
     border-radius: 5%;
     object-fit: cover;
-    z-index: 0; 
+    z-index: 0;
 }
 
 .projectcard {
-    position: relative; 
+    position: relative;
     height: 18rem;
     width: 100%;
     border-radius: 5%;
 }
+
 .layer {
     display: grid;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
-    height: 0%; /* Start with height 0 */
-    overflow: hidden; /* Ensure the content is hidden */
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.6), /* Semi-transparent black */
-        rgba(0, 238, 255, 0.5) /* Semi-transparent #0ef */
-    );
+    height: 0%;
+    overflow: hidden;
+    background: linear-gradient(rgba(0, 0, 0, 0.6),
+            rgba(0, 238, 255, 0.5));
     border-radius: 5%;
     z-index: 1;
     align-items: center;
     text-align: center;
     padding: 5%;
     opacity: 0;
+    transition: 0.4s ease-in-out;
 }
+
 .projectcard:hover .layer {
-    height: 100%; 
+    height: 100%;
     opacity: 100;
 }
-.link{
 
-}
-.link i{
+.link {}
+
+.link i {
     font-size: 2rem;
-    
     background: white;
     border-radius: 50%;
     padding: 2%;
     color: #0ef;
+    transition: 0.7s ease-in-out;
 }
+
 .link i:hover {
     background: #0ef;
     color: white;
-    
+
 }
-.contacts{
+
+.contacts {
     display: flex;
     margin: 5%;
 }
-.leftcontact{
+
+.leftcontact {
     width: 50%;
     margin: 1%;
 }
-.leftcontact h2{
+
+.leftcontact h2 {
     text-align: center;
 }
-.leftcontact p{
-    color: rgba(177,177,177);
+
+.leftcontact p {
+    color: rgba(177, 177, 177);
     font-size: 1rem;
 }
-.leftcontact h3{
+
+.leftcontact h3 {
     margin: 5% 0 1% 0;
 }
-.rightcontact{
+
+.rightcontact {
     width: 50%;
     margin: 1%;
 }
-.rightcontact form{
+
+.rightcontact form {
     display: flex;
     flex-direction: column;
 }
-.rightcontact form input{
-    background-color: rgba(177,177,177);
+
+.rightcontact form input {
+    background-color: rgba(177, 177, 177);
     border: none;
     margin: 5px;
     height: 3rem;
@@ -316,16 +354,19 @@ header {
     color: #000;
 
 }
-.rightcontact form input::placeholder{
+
+.rightcontact form input::placeholder {
     font-weight: 600;
     padding-left: 10px;
 }
-.rightcontact form textarea::placeholder{
+
+.rightcontact form textarea::placeholder {
     font-weight: 600;
     padding-left: 10px;
     padding-top: 10px;
 }
-.rightcontact form button{
+
+.rightcontact form button {
     background-color: #0ef;
     color: #000;
     height: 3rem;
@@ -336,20 +377,24 @@ header {
     margin: 25px 5px;
     box-shadow: 0 0 20px 5px #0ef;
 }
-.rightcontact form button:hover{
+
+.rightcontact form button:hover {
     box-shadow: 0 0 30px 10px #0ef;
 }
-#messagebox{
-    background-color: rgba(177,177,177);
+
+#messagebox {
+    background-color: rgba(177, 177, 177);
     border-radius: 5px;
     margin: 10px 5px;
     color: #000;
 
 }
-.contacticons{
+
+.contacticons {
     display: flex;
 }
-.contacticons a{
+
+.contacticons a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -362,22 +407,23 @@ header {
     font-size: 23px;
     margin: 45px 15px 10px 0;
 }
-.contacticons a:hover{
+
+.contacticons a:hover {
     background-color: #0ef;
     color: #031419;
     box-shadow: 0 0 20px #0ef;
 }
-.contacticons a i:hover{
-    color: #031419;
-}
-#communications{
+
+#communications {
     margin: 5% 0 5% 0;
     font-size: 1.1rem;
 }
-.contact{
+
+.contact {
     margin: 10% 0 5% 0;
 }
-#floatingbutton{
+
+#floatingbutton {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -388,11 +434,19 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-#floatingbutton:hover{
     box-shadow: 0 0 20px 5px #0ef;
+    transition: 0.5s ease-in-out;
 }
-#floatingbutton button{
+
+#floatingbutton:hover {
+    transform: translateY(-10px);
+}
+
+#floatingbutton button {
     border: none;
     font-size: 35px;
+}
+
+.footer {
+    text-align: center;
 }
