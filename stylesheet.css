@@ -250,7 +250,12 @@ header {
 .cardbutton a:hover {
     box-shadow: 0 0 30px 10px #0ef;
 }
-
+.cardbutton{
+    opacity: 0;
+    animation: slideTop 1s  ease forwards;
+    animation-timeline: view();
+    animation-range: entry 0% cover 45%;
+}   
 .servicecardborder {
     box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
     margin: 5%;
