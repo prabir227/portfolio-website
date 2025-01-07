@@ -27,15 +27,23 @@ body {
     color: white;
     font-size: 30px;
     font-weight: 600;
-}
 
+}
+.leftheader{
+    animation: slideRight 1s  ease forwards;
+}
 .navbar ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    
 }
-
+.navbar ul li {
+    opacity: 0;
+    animation: slideTop 1s  ease forwards;
+    animation-delay: calc(var(--i)*0.15s);
+}
 .navitem a {
     text-decoration: none;
     color: #0ef;
@@ -81,7 +89,16 @@ body {
     justify-content: left;
     padding: 80px;
 }
-
+.slidebottom{
+    opacity: 0;
+    animation: slideBottom 1s  ease forwards;
+    animation-delay: 0.5s;
+}
+.lefthome h1{
+    opacity: 0;
+    animation: slideRight 1s  ease forwards;
+    animation-delay: 0.95s;
+}
 .righthome {
     width: 55%;
     text-align: center;
@@ -117,7 +134,11 @@ body {
     color: #031419;
     box-shadow: 0 0 20px #0ef;
 }
-
+.socialicon{
+    opacity: 0;
+    animation: slideLeft 1s  ease forwards;
+    animation-delay: calc(var(--i)*0.1s);
+}
 .resumebtn a {
     display: inline-block;
     text-decoration: none;
@@ -130,6 +151,10 @@ body {
     align-self: center;
     margin-top: 30px;
     box-shadow: 0 0 20px #0ef;
+    transition: 0.4s ease;
+    opacity: 0;
+    animation: slideTop 1s  ease forwards;
+    animation-delay: 1.3s;
 }
 
 .resumebtn a:hover {
@@ -219,6 +244,7 @@ header {
     font-size: 15px;
     font-weight: 600;
     box-shadow: 0 0 20px #0ef;
+    transition: 0.4s ease;
 }
 
 .cardbutton a:hover {
@@ -261,13 +287,16 @@ header {
     border-radius: 5%;
     object-fit: cover;
     z-index: 0;
+    transition: 0.4s ease-in-out;
 }
+
 
 .projectcard {
     position: relative;
     height: 18rem;
     width: 100%;
     border-radius: 5%;
+    overflow: hidden;
 }
 
 .layer {
@@ -293,8 +322,9 @@ header {
     height: 100%;
     opacity: 100;
 }
-
-.link {}
+.projectcard:hover img {
+    transform: scale(1.1);
+}
 
 .link i {
     font-size: 2rem;
@@ -376,6 +406,7 @@ header {
     border: none;
     margin: 25px 5px;
     box-shadow: 0 0 20px 5px #0ef;
+    transition: 0.4s ease;
 }
 
 .rightcontact form button:hover {
@@ -449,4 +480,59 @@ header {
 
 .footer {
     text-align: center;
+}
+@keyframes slideRight {
+    from{
+        transform: translateX(-200px);
+        opacity: 0;
+        
+    }
+
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+        
+    }
+}
+@keyframes slideTop {
+    from{
+        transform: translateY(200px);
+        opacity: 0;
+        
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+        
+    }
+    
+}
+@keyframes slideBottom {
+    from{
+        transform: translateY(-200px);
+        opacity: 0;
+        
+    }
+
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+        
+    }
+    
+}
+@keyframes slideLeft {
+    from{
+        transform: translateX(200px);
+        opacity: 0;
+        
+    }
+
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+        
+    }
+    
 }
