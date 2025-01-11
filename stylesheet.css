@@ -25,7 +25,7 @@ body {
 .leftheader a {
     text-decoration: none;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 600;
 
 }
@@ -48,7 +48,7 @@ body {
     text-decoration: none;
     color: #0ef;
     margin: 0 40px;
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
     top: 15px;
 }
@@ -56,11 +56,11 @@ body {
 .navbar ul li a::after {
     content: "";
     width: 0%;
-    height: 3px;
+    height: 2px;
     display: block;
     background-color: #0ef;
     position: relative;
-    top: 7px;
+    top: 5px;
     left: 30px;
     border-radius: 50px;
     transition: 0.7s ease-in-out;
@@ -68,7 +68,7 @@ body {
 
 .navbar ul li a:hover::after {
     width: 80%;
-    height: 3px;
+    height: 2px;
     display: block;
     background-color: #0ef;
 }
@@ -76,7 +76,7 @@ body {
 .home {
     display: flex;
     justify-content: space-around;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .home div {
@@ -85,7 +85,7 @@ body {
 
 .lefthome {
     width: 45%;
-    font-size: 3rem;
+    font-size: 2rem;
     justify-content: left;
     padding: 80px;
 }
@@ -102,10 +102,11 @@ body {
 .righthome {
     width: 55%;
     text-align: center;
+    transform: scale(0.75);
 }
 
 #homeimg {
-    margin: -15% 0 0 0;
+    margin: -28% 0 0 0;
 
 }
 
@@ -119,12 +120,12 @@ body {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
     border: 2px solid #0ef;
     color: #0ef;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 25px;
     margin: 30px 15px 10px 0;
 
 }
@@ -146,7 +147,7 @@ body {
     background-color: #0ef;
     border-radius: 40px;
     padding: 10px 15px;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 600;
     align-self: center;
     margin-top: 30px;
@@ -173,7 +174,7 @@ body {
 
 .rightabout {
     width: 55%;
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
 }
 
@@ -182,37 +183,38 @@ body {
 }
 
 .spacediv {
-    height: 30px;
+    height: 25px;
 }
 
 #aboutimg {
-    margin: -15% 0 0 0;
+    margin: -28% 0 0 0;
+    transform: scale(0.8);
 }
 
 #aboutdesig {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
 
 }
 
 #abouttext {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 0 10% 0 0;
 
 }
 
 #servicehead {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0 0 0 -2%;
     text-align: center;
 }
 
 section {
-    margin: 10% 0 10% 0;
+    margin: 8% 0 8% 0;
 }
 
 header {
-    margin: 0 0 10% 0;
+    margin: 0 0 8% 0;
 }
 
 .servicescontainer {
@@ -230,9 +232,11 @@ header {
     padding: 5%;
     height: 100%;
 }
-
+.servicecard p{
+    font-size: 0.9rem;
+}
 .cardspace {
-    height: 5%;
+    height: 4%;
 }
 
 .cardbutton a {
@@ -241,7 +245,7 @@ header {
     background-color: #0ef;
     border-radius: 40px;
     padding: 10px 15px;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 600;
     box-shadow: 0 0 20px #0ef;
     transition: 0.4s ease;
@@ -254,13 +258,13 @@ header {
     opacity: 0;
     animation: slideTop 1s  ease forwards;
     animation-timeline: view();
-    animation-range: entry 0% cover 45%;
+    animation-range: entry 0% cover 35%;
 }   
 .servicecardborder {
     box-shadow: 1px 1px 20px #012290f7, 1px 1px 40px #0053b8f7;
     margin: 5%;
     border-radius: 5%;
-    height: 23rem;
+    height: 18rem;
     display: flex;
     align-items: stretch;
     position: relative;
@@ -271,7 +275,7 @@ header {
 }
 
 #projecthead {
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
     margin: 0 0 0 -2%;
     text-align: center;
@@ -298,7 +302,7 @@ header {
 
 .projectcard {
     position: relative;
-    height: 18rem;
+    height: 15rem;
     width: 100%;
     border-radius: 5%;
     overflow: hidden;
@@ -332,7 +336,7 @@ header {
 }
 
 .link i {
-    font-size: 2rem;
+    font-size: 1.5rem;
     background: white;
     border-radius: 50%;
     padding: 2%;
@@ -356,16 +360,16 @@ header {
     margin: 1%;
 }
 
-.leftcontact h2 {
+.leftcontact h3 {
     text-align: center;
 }
 
 .leftcontact p {
     color: rgba(177, 177, 177);
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
-.leftcontact h3 {
+.leftcontact h4 {
     margin: 5% 0 1% 0;
 }
 
@@ -383,7 +387,7 @@ header {
     background-color: rgba(177, 177, 177);
     border: none;
     margin: 5px;
-    height: 3rem;
+    height: 2.7rem;
     border-radius: 5px;
     overflow: hidden;
     color: #000;
@@ -404,8 +408,8 @@ header {
 .rightcontact form button {
     background-color: #0ef;
     color: #000;
-    height: 3rem;
-    font-size: 1rem;
+    height: 2.5rem;
+    font-size: 0.9rem;
     font-weight: bold;
     border-radius: 20px;
     border: none;
@@ -435,12 +439,12 @@ header {
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    height: 40px;
-    width: 40px;
+    height: 35px;
+    width: 35px;
     border: 2px solid #0ef;
     color: #0ef;
     border-radius: 50%;
-    font-size: 23px;
+    font-size: 20px;
     margin: 45px 15px 10px 0;
 }
 
@@ -452,7 +456,7 @@ header {
 
 #communications {
     margin: 5% 0 5% 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 
 .contact {
@@ -465,8 +469,8 @@ header {
     right: 20px;
     background-color: #0ef;
     border-radius: 10%;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -480,11 +484,14 @@ header {
 
 #floatingbutton button {
     border: none;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .footer {
     text-align: center;
+    font-size: 0.8rem;
+    background-color: #00080a;
+    padding: 2px;
 }
 @keyframes slideRight {
     from{
