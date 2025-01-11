@@ -88,6 +88,7 @@ body {
     font-size: 2rem;
     justify-content: left;
     padding: 80px;
+    padding-top: 10%;
 }
 .slidebottom{
     opacity: 0;
@@ -147,7 +148,7 @@ body {
     background-color: #0ef;
     border-radius: 40px;
     padding: 10px 15px;
-    font-size: 23px;
+    font-size: 21px;
     font-weight: 600;
     align-self: center;
     margin-top: 30px;
@@ -337,7 +338,7 @@ header {
 
 .link i {
     font-size: 1.5rem;
-    background: white;
+    background: aliceblue;
     border-radius: 50%;
     padding: 2%;
     color: #0ef;
@@ -346,7 +347,7 @@ header {
 
 .link i:hover {
     background: #0ef;
-    color: white;
+    color: aliceblue;
 
 }
 
@@ -456,7 +457,7 @@ header {
 
 #communications {
     margin: 5% 0 5% 0;
-    font-size: 1rem;
+    font-size: 0.85rem;
 }
 
 .contact {
