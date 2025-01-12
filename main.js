@@ -23,3 +23,10 @@ var typed = new Typed('#desig', {
             console.log("FAILED...", error);
         });
 }
+
+function screenTop(){
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+});
+}
