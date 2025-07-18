@@ -34,6 +34,7 @@ body {
 .leftheader{
     animation: slideRight 1s  ease forwards;
 }
+
 .navbar ul {
     display: flex;
     justify-content: space-between;
@@ -80,7 +81,12 @@ body {
     justify-content: space-around;
     margin-top: 50px;
 }
-
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
 .home div {
     color: white;
 }
@@ -107,7 +113,12 @@ body {
     text-align: center;
     transform: scale(0.75);
 }
-
+@media (max-width: 768px) {
+    #homeimg {
+        width: 100%;
+        transform: scale(0.25);
+    }
+}
 #homeimg {
     margin: -28% 0 0 0;
 
@@ -170,7 +181,12 @@ body {
     scroll-margin-top: 17rem;
 
 }
-
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .leftabout {
     width: 45%;
 
@@ -195,6 +211,13 @@ body {
     transform: scale(0.8);
 }
 
+@media (max-width: 768px) {
+    #aboutimg {
+        margin: 0 0 0 0;
+        transform: scale(0.25);
+        align-items: center;
+    }
+}
 #aboutdesig {
     font-size: 2rem;
     font-weight: 600;
@@ -220,6 +243,12 @@ body {
 .skillsdiv{
     display: flex;
     margin: 5%;
+}
+@media (max-width: 768px) {
+    .skillsdiv {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .leftskills{
     width: 50%;
@@ -408,7 +437,11 @@ header {
     height: auto;
 
 }
-
+@media (max-width: 768px) {
+    .servicescontainer {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+}
 .servicecard {
     display: flex;
     flex-direction: column;
@@ -473,7 +506,11 @@ header {
 
 
 }
-
+@media (max-width: 768px) {
+    .projectscontainer {
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+}
 .projectcard img {
     width: 100%;
     height: 100%;
@@ -538,7 +575,12 @@ header {
     display: flex;
     margin: 5%;
 }
-
+@media (max-width: 768px) {
+    .contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .leftcontact {
     width: 50%;
     margin: 1%;
